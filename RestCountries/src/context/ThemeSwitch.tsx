@@ -21,7 +21,7 @@ export const ThemeSwitch=()=>
     }
     return(
         <>
-        <button onClick={handleButton}>CLICK ME</button>
+        <button onClick={handleButton}>Dark Mode</button>
         </>
     )
 }
