@@ -6,20 +6,16 @@ export interface CountryDataI {
   capital: string | undefined;
 }
 
-export const FlagInfo = ({ countryData }: { countryData: CountryDataI }) => {
-  //const test = CountryData.CountryData.map(x=>x.name);
-  // console.log(test)
-  console.log(countryData[0].flags.svg);
-
+export const FlagInfo = ({ countryData,index }: { countryData: any ,index:number}) => {
   return (
-    <section className="flex flex-col bg-white dark:bg-DarkBlueDM dark:text-white rounded items-center  ">
-      <img src={countryData[1].flags.svg} />
+    <section className="flex flex-col bg-white dark:bg-DarkBlueDM  rounded items-center  ">
+      <img className="h-48 w-full object-cover" src={countryData[index].flags.svg} />
       <div className="flex flex-col p-5 w-full  gap-y-5 text-xs">
-        <h1>{countryData[0].name} </h1>
+        <h1>{countryData[index].name} </h1>
         <div className="font-semibold">
-          <p>Population:<span>{countryData[0].population}</span></p>
-          <p>Region:<span>{countryData[0].region}</span></p>
-          <p>Capital:<span>{countryData[0].capital}</span></p>
+          <p>Population:<span>{countryData[index].population}</span></p>
+          <p>Region:<span>{countryData[index].region}</span></p>
+          <p>Capital:<span>{countryData[index].capital}</span></p>
         </div>
       </div>
     </section>
