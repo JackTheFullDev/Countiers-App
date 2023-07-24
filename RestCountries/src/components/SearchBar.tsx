@@ -5,6 +5,7 @@ import searchContext from '../context/SearchContext';
 export const SearchBar=()=>
 {
     const contextValue = useContext(searchContext);
+
     // Check if the context value is null before extracting handleSearch
     const handleSearch = contextValue ? contextValue.handleSearch : () => {};
     //const {handleSearch} = useContext(searchContext); warring here

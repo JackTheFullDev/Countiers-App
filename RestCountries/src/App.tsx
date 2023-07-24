@@ -1,4 +1,5 @@
 import "./App.css";
+import { Filter } from "./components/Filter";
 import { FlagInfo } from "./components/FlagInfo";
 import { Flags } from "./components/Flags";
 import { HBar } from "./components/HBar";
@@ -14,6 +15,7 @@ function App() {
       <div className="p-5">
         <div className="flex justify-between mb-4">
           <SearchBar />
+          <Filter/>
         </div>
         <Flags/>
       </div>
