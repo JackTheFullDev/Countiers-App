@@ -15,6 +15,7 @@ export const Flags = () => {
   );
   const contextValue = useContext(searchContext);
   const search = contextValue?.search ?? "";
+  const filterCountry=contextValue?.filterByRegion??""
   const contry = countryData.filter((x) => x.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
