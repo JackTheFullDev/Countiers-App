@@ -20,8 +20,9 @@ export const SearchProvider=({children}:{children:ReactNode})=>
         
     }
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        console.log(event.currentTarget.value);
+        
         setFilterByRegion(event.currentTarget.value);
+        console.log(filterByRegion)
       };
 
     return(
