@@ -30,7 +30,7 @@ export const FlagInfo = ({ countryData,index }: { countryData: any ,index:number
     
       <button onClick={()=>showFunction(index)}>hello</button>
      {showFlag &&
-      <div>
+      <div className="bg-black absolute h-screen ">
       showed!{index}
     </div>}
       

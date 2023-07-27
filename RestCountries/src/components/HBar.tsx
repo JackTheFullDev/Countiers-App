@@ -4,7 +4,7 @@ import { ThemeSwitch } from '../context/ThemeSwitch';
 export const HBar=()=>
 {
     return(
-        <div className='flex justify-between font-semibold border-b-2 dark:border-black p-3 items-start bg-VeryLightGrayLM  dark:bg-DarkBlueDM dark:text-White h-13'>
+        <div className='flex sticky top-0 z-10 justify-between font-semibold border-b-2 dark:border-black p-3 items-start bg-VeryLightGrayLM  dark:bg-DarkBlueDM dark:text-White h-13'>
             <h1>Where in the world?</h1>
             <div className='flex text-center items-center gap-2'>
                 <FaRegMoon/>
