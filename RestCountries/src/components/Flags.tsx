@@ -5,12 +5,12 @@ import { useContext } from "react";
 import searchContext from "../context/SearchContext";
 export const Flags = () => {
   const countryData: CountryDataI[] = CountryData.map(
-    ({ name, region, flags, population, capital,nativeName,subregion,languages,topLevelDomain,currencies }) => ({
+    ({ name, region, flags, population, capital,nativeName,subregion,languages,topLevelDomain,currencies,borders }) => ({
       name,
       region,
       flags,
       population,
-      capital,nativeName,subregion,topLevelDomain,currencies,languages
+      capital,nativeName,subregion,topLevelDomain,currencies,languages,borders
       
     })
   );

@@ -34,6 +34,9 @@ export const Filter = () => {
           <button value="Oceania" onClick={handleClick}>
             <p>Oceania</p>
           </button>
+          <button value="" onClick={handleClick}>
+            <p>Reset</p>
+          </button>
         </div>
       ) : null}
     </button>
