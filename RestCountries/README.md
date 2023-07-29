@@ -1,27 +1,9 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Tailwind
+My First approach to TypeScript and Tailwind.
+I mainly  focused on understanding how  to use Typescript with React and also how to create fast and responisve apps with css framework. 
+There is some room to implement better types, create better components and make the code much better for analysis, but a great app to create and learn new things.
+Final result ( before v2 version :) )
+![image](https://github.com/JackTheFullDev/Countiers-App/assets/121553780/4411ebdd-1c77-4699-8589-11b607d76422)
+![image](https://github.com/JackTheFullDev/Countiers-App/assets/121553780/f522c882-57bb-415b-8a7a-3dccfeef3d1b)
+![image](https://github.com/JackTheFullDev/Countiers-App/assets/121553780/efd06667-965a-47a1-bf3d-67676c3cdc52)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
