@@ -13,6 +13,7 @@ export interface CountryDataI {
   currencies: Currency[];
   languages: Language[];
   borders: string[];
+  
 }
 interface Currency {
   code: string;
@@ -30,7 +31,7 @@ export const FlagInfo = ({
   countryData,
   index,
 }: {
-  countryData: any;
+  countryData: CountryDataI[];
   index: number;
 }) => {
   const [showFlag, setShowFlag] = useState<boolean>(false);
@@ -119,9 +120,18 @@ export const FlagInfo = ({
                   <div className="mt-5 flex justify-between items-start flex-col sm:flex-row sm:items-center gap-2 ">
                     <p>Border Countries:</p>
                     <div className="flex gap-2 flex-wrap ">
-                      {countryData[index].borders.map((x: any, i: number) => {
-                        return <p className="p-1 pl-4 pr-4 dark:bg-DarkBlueDM bg-VeryLightGrayLM rounded " key={i}>{x}</p>;
-                      })}
+                      {countryData[index].borders? (
+                        countryData[index].borders.map((x: any, i: number) => (
+                          <p
+                            className="p-1 pl-4 pr-4 dark:bg-DarkBlueDM bg-VeryLightGrayLM rounded"
+                            key={i}
+                          >
+                            {x}
+                          </p>
+                        ))
+                      ) : (
+                        <p>NONE</p>
+                      )}
                     </div>
                   </div>
                 </div>

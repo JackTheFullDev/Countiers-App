@@ -7,21 +7,23 @@ export const ThemeSwitch=()=>
     {
         if(theme==="dark")
         {
-            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("dark");
         }
         else
         {
-            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("dark");
         }
-    })
+    },[theme])
     const handleButton=()=>
     {
-        setTheme(theme==="dark"?"light":"dark");
+        setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
         console.log("wokrs");
     }
     return(
         <>
-        <button onClick={handleButton}>Dark Mode</button>
+         <button onClick={handleButton}>
+        {theme === "dark" ? "Light Mode" : "Dark Mode"}
+      </button>
         </>
     )
 }

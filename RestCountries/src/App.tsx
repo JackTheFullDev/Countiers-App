@@ -1,11 +1,10 @@
 import "./App.css";
 import { Filter } from "./components/Filter";
-import { FlagInfo } from "./components/FlagInfo";
 import { Flags } from "./components/Flags";
 import { HBar } from "./components/HBar";
 import { SearchBar } from "./components/SearchBar";
-import searchContext, { SearchProvider } from "./context/SearchContext";
-import { useContext } from "react";
+import { SearchProvider } from "./context/SearchContext";
+
 
 function App() {
   return (
